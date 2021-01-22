@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_mips_top_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_mips_top" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="534260000fs"></ZoomStartTime>
+      <ZoomEndTime time="590300001fs"></ZoomEndTime>
+      <Cursor1Time time="562020000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="262"></NameColumnWidth>
+      <ValueColumnWidth column_width="134"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="24" />
+   <wvobject fp_name="/tb_mips_top/DUT/mips/cu/opcode" type="array">
+      <obj_property name="ElementShortName">opcode[5:0]</obj_property>
+      <obj_property name="ObjectShortName">opcode[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_mips_top/DUT/mips/cu/funct" type="array">
+      <obj_property name="ElementShortName">funct[5:0]</obj_property>
+      <obj_property name="ObjectShortName">funct[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_mips_top/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_mips_top/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_mips_top/we_dm" type="logic">
+      <obj_property name="ElementShortName">we_dm</obj_property>
+      <obj_property name="ObjectShortName">we_dm</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_mips_top/pc_current" type="array">
+      <obj_property name="ElementShortName">pc_current[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pc_current[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_mips_top/instr" type="array">
+      <obj_property name="ElementShortName">instr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">instr[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_mips_top/alu_out" type="array">
+      <obj_property name="ElementShortName">alu_out[31:0]</obj_property>
+      <obj_property name="ObjectShortName">alu_out[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_mips_top/rd_dm" type="array">
+      <obj_property name="ElementShortName">rd_dm[31:0]</obj_property>
+      <obj_property name="ObjectShortName">rd_dm[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_mips_top/DONT_USE" type="array">
+      <obj_property name="ElementShortName">DONT_USE[31:0]</obj_property>
+      <obj_property name="ObjectShortName">DONT_USE[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_mips_top/DUT/mips/dp/wd_multu" type="array">
+      <obj_property name="ElementShortName">wd_multu[63:0]</obj_property>
+      <obj_property name="ObjectShortName">wd_multu[63:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_mips_top/DUT/mips/dp/multu_sel" type="logic">
+      <obj_property name="ElementShortName">multu_sel</obj_property>
+      <obj_property name="ObjectShortName">multu_sel</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_mips_top/wd_dm" type="array">
+      <obj_property name="ElementShortName">wd_dm[31:0]</obj_property>
+      <obj_property name="ObjectShortName">wd_dm[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_mips_top/DUT/mips/dp/alu_pa" type="array">
+      <obj_property name="ElementShortName">alu_pa[31:0]</obj_property>
+      <obj_property name="ObjectShortName">alu_pa[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_mips_top/DUT/mips/dp/aMultb" type="array">
+      <obj_property name="ElementShortName">aMultb[63:0]</obj_property>
+      <obj_property name="ObjectShortName">aMultb[63:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_mips_top/DUT/mips/dp/wd_multu" type="array">
+      <obj_property name="ElementShortName">wd_multu[63:0]</obj_property>
+      <obj_property name="ObjectShortName">wd_multu[63:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_mips_top/DUT/mips/dp/wd_multu_rf" type="array">
+      <obj_property name="ElementShortName">wd_multu_rf[31:0]</obj_property>
+      <obj_property name="ObjectShortName">wd_multu_rf[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_mips_top/DUT/mips/dp/hilo_sel" type="array">
+      <obj_property name="ElementShortName">hilo_sel[1:0]</obj_property>
+      <obj_property name="ObjectShortName">hilo_sel[1:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_mips_top/DUT/mips/dp/wd" type="array">
+      <obj_property name="ElementShortName">wd[31:0]</obj_property>
+      <obj_property name="ObjectShortName">wd[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_mips_top/DUT/mips/dp/jal_ra" type="logic">
+      <obj_property name="ElementShortName">jal_ra</obj_property>
+      <obj_property name="ObjectShortName">jal_ra</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_mips_top/DUT/mips/dp/jr_sel" type="logic">
+      <obj_property name="ElementShortName">jr_sel</obj_property>
+      <obj_property name="ObjectShortName">jr_sel</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_mips_top/DUT/mips/dp/alu_src" type="logic">
+      <obj_property name="ElementShortName">alu_src</obj_property>
+      <obj_property name="ObjectShortName">alu_src</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_mips_top/DUT/mips/dp/sl_alu_pa" type="array">
+      <obj_property name="ElementShortName">sl_alu_pa[31:0]</obj_property>
+      <obj_property name="ObjectShortName">sl_alu_pa[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_mips_top/DUT/mips/dp/alu_pb" type="array">
+      <obj_property name="ElementShortName">alu_pb[31:0]</obj_property>
+      <obj_property name="ObjectShortName">alu_pb[31:0]</obj_property>
+   </wvobject>
+</wave_config>

@@ -1,0 +1,782 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sat Apr 25 23:07:45 2020
+# Process ID: 6452
+# Current directory: C:/Users/phatle/ProcessorDesign/ProcessorDesign.runs/synth_1
+# Command line: vivado.exe -log soc_FPGA.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source soc_FPGA.tcl
+# Log file: C:/Users/phatle/ProcessorDesign/ProcessorDesign.runs/synth_1/soc_FPGA.vds
+# Journal file: C:/Users/phatle/ProcessorDesign/ProcessorDesign.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source soc_FPGA.tcl -notrace
+Command: synth_design -top soc_FPGA -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 8644 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 673.734 ; gain = 177.047
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'soc_FPGA' [C:/Users/phatle/ProcessorDesign/ProcessorDesign.srcs/sources_1/new/soc_FPGA.v:23]
+INFO: [Synth 8-6157] synthesizing module 'clk_gen' [C:/Users/phatle/Lab1-Factorial/Lab1-Factorial.srcs/sources_1/imports/basys3_utility_modules/clk_gen.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'clk_gen' (1#1) [C:/Users/phatle/Lab1-Factorial/Lab1-Factorial.srcs/sources_1/imports/basys3_utility_modules/clk_gen.v:1]
+INFO: [Synth 8-6157] synthesizing module 'hex_to_7seg' [C:/Users/phatle/ProcessorDesign/ProcessorDesign.srcs/sources_1/imports/basys3_single_cycle_mips_validation/hex_to_7seg.v:1]
+INFO: [Synth 8-226] default block is never used [C:/Users/phatle/ProcessorDesign/ProcessorDesign.srcs/sources_1/imports/basys3_single_cycle_mips_validation/hex_to_7seg.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'hex_to_7seg' (2#1) [C:/Users/phatle/ProcessorDesign/ProcessorDesign.srcs/sources_1/imports/basys3_single_cycle_mips_validation/hex_to_7seg.v:1]
+INFO: [Synth 8-6157] synthesizing module 'led_mux' [C:/Users/phatle/Lab1-Factorial/Lab1-Factorial.srcs/sources_1/imports/basys3_utility_modules/led_mux.v:1]
+INFO: [Synth 8-226] default block is never used [C:/Users/phatle/Lab1-Factorial/Lab1-Factorial.srcs/sources_1/imports/basys3_utility_modules/led_mux.v:20]
+INFO: [Synth 8-6155] done synthesizing module 'led_mux' (3#1) [C:/Users/phatle/Lab1-Factorial/Lab1-Factorial.srcs/sources_1/imports/basys3_utility_modules/led_mux.v:1]
+INFO: [Synth 8-6157] synthesizing module 'System' [C:/Users/phatle/ProcessorDesign/ProcessorDesign.srcs/sources_1/new/System.v:23]
+INFO: [Synth 8-6157] synthesizing module 'soc_ad' [C:/Users/phatle/ProcessorDesign/ProcessorDesign.srcs/sources_1/new/soc_ad.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'soc_ad' (4#1) [C:/Users/phatle/ProcessorDesign/ProcessorDesign.srcs/sources_1/new/soc_ad.v:23]
+INFO: [Synth 8-6157] synthesizing module 'imem' [C:/Users/phatle/ProcessorDesign/ProcessorDesign.srcs/sources_1/imports/single_cycle_mips_source_initial/memory/imem.v:1]
+INFO: [Synth 8-3876] $readmem data file 'lab8.dat' is read successfully [C:/Users/phatle/ProcessorDesign/ProcessorDesign.srcs/sources_1/imports/single_cycle_mips_source_initial/memory/imem.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'imem' (5#1) [C:/Users/phatle/ProcessorDesign/ProcessorDesign.srcs/sources_1/imports/single_cycle_mips_source_initial/memory/imem.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mips' [C:/Users/phatle/ProcessorDesign/ProcessorDesign.srcs/sources_1/imports/single_cycle_mips_source_initial/mips/mips.v:1]
+INFO: [Synth 8-6157] synthesizing module 'datapath' [C:/Users/phatle/ProcessorDesign/ProcessorDesign.srcs/sources_1/imports/single_cycle_mips_source_initial/datapath/datapath.v:1]
+INFO: [Synth 8-6157] synthesizing module 'dreg' [C:/Users/phatle/ProcessorDesign/ProcessorDesign.srcs/sources_1/imports/single_cycle_mips_source_initial/datapath/dreg.v:1]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'dreg' (6#1) [C:/Users/phatle/ProcessorDesign/ProcessorDesign.srcs/sources_1/imports/single_cycle_mips_source_initial/datapath/dreg.v:1]
+INFO: [Synth 8-6157] synthesizing module 'adder' [C:/Users/phatle/ProcessorDesign/ProcessorDesign.srcs/sources_1/imports/single_cycle_mips_source_initial/datapath/adder.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'adder' (7#1) [C:/Users/phatle/ProcessorDesign/ProcessorDesign.srcs/sources_1/imports/single_cycle_mips_source_initial/datapath/adder.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mux2' [C:/Users/phatle/ProcessorDesign/ProcessorDesign.srcs/sources_1/imports/single_cycle_mips_source_initial/datapath/mux2.v:1]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux2' (8#1) [C:/Users/phatle/ProcessorDesign/ProcessorDesign.srcs/sources_1/imports/single_cycle_mips_source_initial/datapath/mux2.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mux2__parameterized0' [C:/Users/phatle/ProcessorDesign/ProcessorDesign.srcs/sources_1/imports/single_cycle_mips_source_initial/datapath/mux2.v:1]
+	Parameter WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux2__parameterized0' (8#1) [C:/Users/phatle/ProcessorDesign/ProcessorDesign.srcs/sources_1/imports/single_cycle_mips_source_initial/datapath/mux2.v:1]
+INFO: [Synth 8-6157] synthesizing module 'regfile' [C:/Users/phatle/ProcessorDesign/ProcessorDesign.srcs/sources_1/imports/single_cycle_mips_source_initial/datapath/regfile.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'regfile' (9#1) [C:/Users/phatle/ProcessorDesign/ProcessorDesign.srcs/sources_1/imports/single_cycle_mips_source_initial/datapath/regfile.v:1]
+INFO: [Synth 8-6157] synthesizing module 'signext' [C:/Users/phatle/ProcessorDesign/ProcessorDesign.srcs/sources_1/imports/single_cycle_mips_source_initial/datapath/signext.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'signext' (10#1) [C:/Users/phatle/ProcessorDesign/ProcessorDesign.srcs/sources_1/imports/single_cycle_mips_source_initial/datapath/signext.v:1]
+INFO: [Synth 8-6157] synthesizing module 'alu' [C:/Users/phatle/ProcessorDesign/ProcessorDesign.srcs/sources_1/imports/single_cycle_mips_source_initial/datapath/alu.v:1]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/phatle/ProcessorDesign/ProcessorDesign.srcs/sources_1/imports/single_cycle_mips_source_initial/datapath/alu.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'alu' (11#1) [C:/Users/phatle/ProcessorDesign/ProcessorDesign.srcs/sources_1/imports/single_cycle_mips_source_initial/datapath/alu.v:1]
+INFO: [Synth 8-6157] synthesizing module 'multu' [C:/Users/phatle/ProcessorDesign/ProcessorDesign.srcs/sources_1/new/multu.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'multu' (12#1) [C:/Users/phatle/ProcessorDesign/ProcessorDesign.srcs/sources_1/new/multu.v:23]
+INFO: [Synth 8-6157] synthesizing module 'dreg__parameterized0' [C:/Users/phatle/ProcessorDesign/ProcessorDesign.srcs/sources_1/imports/single_cycle_mips_source_initial/datapath/dreg.v:1]
+	Parameter WIDTH bound to: 64 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'dreg__parameterized0' (12#1) [C:/Users/phatle/ProcessorDesign/ProcessorDesign.srcs/sources_1/imports/single_cycle_mips_source_initial/datapath/dreg.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mux3' [C:/Users/phatle/ProcessorDesign/ProcessorDesign.srcs/sources_1/new/mux3.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'mux3' (13#1) [C:/Users/phatle/ProcessorDesign/ProcessorDesign.srcs/sources_1/new/mux3.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'datapath' (14#1) [C:/Users/phatle/ProcessorDesign/ProcessorDesign.srcs/sources_1/imports/single_cycle_mips_source_initial/datapath/datapath.v:1]
+INFO: [Synth 8-6157] synthesizing module 'controlunit' [C:/Users/phatle/ProcessorDesign/ProcessorDesign.srcs/sources_1/imports/single_cycle_mips_source_initial/control_unit/controlunit.v:1]
+INFO: [Synth 8-6157] synthesizing module 'maindec' [C:/Users/phatle/ProcessorDesign/ProcessorDesign.srcs/sources_1/imports/single_cycle_mips_source_initial/control_unit/maindec.v:1]
+WARNING: [Synth 8-151] case item 6'b001000 is unreachable [C:/Users/phatle/ProcessorDesign/ProcessorDesign.srcs/sources_1/imports/single_cycle_mips_source_initial/control_unit/maindec.v:23]
+WARNING: [Synth 8-151] case item 6'b000010 is unreachable [C:/Users/phatle/ProcessorDesign/ProcessorDesign.srcs/sources_1/imports/single_cycle_mips_source_initial/control_unit/maindec.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'maindec' (15#1) [C:/Users/phatle/ProcessorDesign/ProcessorDesign.srcs/sources_1/imports/single_cycle_mips_source_initial/control_unit/maindec.v:1]
+INFO: [Synth 8-6157] synthesizing module 'auxdec' [C:/Users/phatle/ProcessorDesign/ProcessorDesign.srcs/sources_1/imports/single_cycle_mips_source_initial/control_unit/auxdec.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'auxdec' (16#1) [C:/Users/phatle/ProcessorDesign/ProcessorDesign.srcs/sources_1/imports/single_cycle_mips_source_initial/control_unit/auxdec.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'controlunit' (17#1) [C:/Users/phatle/ProcessorDesign/ProcessorDesign.srcs/sources_1/imports/single_cycle_mips_source_initial/control_unit/controlunit.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'mips' (18#1) [C:/Users/phatle/ProcessorDesign/ProcessorDesign.srcs/sources_1/imports/single_cycle_mips_source_initial/mips/mips.v:1]
+INFO: [Synth 8-6157] synthesizing module 'dmem' [C:/Users/phatle/ProcessorDesign/ProcessorDesign.srcs/sources_1/imports/single_cycle_mips_source_initial/memory/dmem.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'dmem' (19#1) [C:/Users/phatle/ProcessorDesign/ProcessorDesign.srcs/sources_1/imports/single_cycle_mips_source_initial/memory/dmem.v:1]
+INFO: [Synth 8-6157] synthesizing module 'fact_top' [C:/Users/phatle/ProcessorDesign/ProcessorDesign.srcs/sources_1/new/fact_top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'fact_ad' [C:/Users/phatle/ProcessorDesign/ProcessorDesign.srcs/sources_1/new/fact_ad.v:23]
+INFO: [Synth 8-226] default block is never used [C:/Users/phatle/ProcessorDesign/ProcessorDesign.srcs/sources_1/new/fact_ad.v:32]
+INFO: [Synth 8-6155] done synthesizing module 'fact_ad' (20#1) [C:/Users/phatle/ProcessorDesign/ProcessorDesign.srcs/sources_1/new/fact_ad.v:23]
+INFO: [Synth 8-6157] synthesizing module 'dreg__parameterized1' [C:/Users/phatle/ProcessorDesign/ProcessorDesign.srcs/sources_1/imports/single_cycle_mips_source_initial/datapath/dreg.v:1]
+	Parameter WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'dreg__parameterized1' (20#1) [C:/Users/phatle/ProcessorDesign/ProcessorDesign.srcs/sources_1/imports/single_cycle_mips_source_initial/datapath/dreg.v:1]
+INFO: [Synth 8-6157] synthesizing module 'dreg__parameterized2' [C:/Users/phatle/ProcessorDesign/ProcessorDesign.srcs/sources_1/imports/single_cycle_mips_source_initial/datapath/dreg.v:1]
+	Parameter WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'dreg__parameterized2' (20#1) [C:/Users/phatle/ProcessorDesign/ProcessorDesign.srcs/sources_1/imports/single_cycle_mips_source_initial/datapath/dreg.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Factorial' [C:/Users/phatle/Lab1-Factorial/Lab1-Factorial.srcs/sources_1/new/Factorial.v:23]
+INFO: [Synth 8-6157] synthesizing module 'DP' [C:/Users/phatle/Lab1-Factorial/Lab1-Factorial.srcs/sources_1/new/DataPath.v:23]
+INFO: [Synth 8-6157] synthesizing module 'CMP' [C:/Users/phatle/Lab1-Factorial/Lab1-Factorial.srcs/sources_1/new/CMP.v:23]
+	Parameter WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'CMP' (21#1) [C:/Users/phatle/Lab1-Factorial/Lab1-Factorial.srcs/sources_1/new/CMP.v:23]
+INFO: [Synth 8-6157] synthesizing module 'CNT' [C:/Users/phatle/Lab1-Factorial/Lab1-Factorial.srcs/sources_1/new/CNT.v:23]
+	Parameter Data_width bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'CNT' (22#1) [C:/Users/phatle/Lab1-Factorial/Lab1-Factorial.srcs/sources_1/new/CNT.v:23]
+INFO: [Synth 8-6157] synthesizing module 'REG' [C:/Users/phatle/Lab1-Factorial/Lab1-Factorial.srcs/sources_1/new/REG.v:23]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'REG' (23#1) [C:/Users/phatle/Lab1-Factorial/Lab1-Factorial.srcs/sources_1/new/REG.v:23]
+INFO: [Synth 8-6157] synthesizing module 'MUL' [C:/Users/phatle/Lab1-Factorial/Lab1-Factorial.srcs/sources_1/new/MUL.v:23]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'MUL' (24#1) [C:/Users/phatle/Lab1-Factorial/Lab1-Factorial.srcs/sources_1/new/MUL.v:23]
+INFO: [Synth 8-6157] synthesizing module 'MUX' [C:/Users/phatle/Lab1-Factorial/Lab1-Factorial.srcs/sources_1/imports/Full Calculator Data Path/mux2.v:1]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'MUX' (25#1) [C:/Users/phatle/Lab1-Factorial/Lab1-Factorial.srcs/sources_1/imports/Full Calculator Data Path/mux2.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'DP' (26#1) [C:/Users/phatle/Lab1-Factorial/Lab1-Factorial.srcs/sources_1/new/DataPath.v:23]
+INFO: [Synth 8-6157] synthesizing module 'CU' [C:/Users/phatle/Lab1-Factorial/Lab1-Factorial.srcs/sources_1/new/ControlUnit.v:23]
+	Parameter S0 bound to: 4'b0000 
+	Parameter S1 bound to: 4'b0001 
+	Parameter S2 bound to: 4'b0010 
+	Parameter S3 bound to: 4'b0011 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/phatle/Lab1-Factorial/Lab1-Factorial.srcs/sources_1/new/ControlUnit.v:45]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/phatle/Lab1-Factorial/Lab1-Factorial.srcs/sources_1/new/ControlUnit.v:75]
+WARNING: [Synth 8-5788] Register CS_reg in module CU is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/phatle/Lab1-Factorial/Lab1-Factorial.srcs/sources_1/new/ControlUnit.v:69]
+INFO: [Synth 8-6155] done synthesizing module 'CU' (27#1) [C:/Users/phatle/Lab1-Factorial/Lab1-Factorial.srcs/sources_1/new/ControlUnit.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Factorial' (28#1) [C:/Users/phatle/Lab1-Factorial/Lab1-Factorial.srcs/sources_1/new/Factorial.v:23]
+INFO: [Synth 8-6157] synthesizing module 'SRreg' [C:/Users/phatle/ProcessorDesign/ProcessorDesign.srcs/sources_1/new/SRreg.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'SRreg' (29#1) [C:/Users/phatle/ProcessorDesign/ProcessorDesign.srcs/sources_1/new/SRreg.v:23]
+INFO: [Synth 8-226] default block is never used [C:/Users/phatle/ProcessorDesign/ProcessorDesign.srcs/sources_1/new/fact_top.v:87]
+INFO: [Synth 8-6155] done synthesizing module 'fact_top' (30#1) [C:/Users/phatle/ProcessorDesign/ProcessorDesign.srcs/sources_1/new/fact_top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'gpio_top' [C:/Users/phatle/ProcessorDesign/ProcessorDesign.srcs/sources_1/new/pqio_top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'GPIO_ad' [C:/Users/phatle/ProcessorDesign/ProcessorDesign.srcs/sources_1/new/GPIO_ad.v:23]
+INFO: [Synth 8-226] default block is never used [C:/Users/phatle/ProcessorDesign/ProcessorDesign.srcs/sources_1/new/GPIO_ad.v:32]
+INFO: [Synth 8-6155] done synthesizing module 'GPIO_ad' (31#1) [C:/Users/phatle/ProcessorDesign/ProcessorDesign.srcs/sources_1/new/GPIO_ad.v:23]
+INFO: [Synth 8-226] default block is never used [C:/Users/phatle/ProcessorDesign/ProcessorDesign.srcs/sources_1/new/pqio_top.v:55]
+INFO: [Synth 8-6155] done synthesizing module 'gpio_top' (32#1) [C:/Users/phatle/ProcessorDesign/ProcessorDesign.srcs/sources_1/new/pqio_top.v:23]
+INFO: [Synth 8-226] default block is never used [C:/Users/phatle/ProcessorDesign/ProcessorDesign.srcs/sources_1/new/System.v:95]
+WARNING: [Synth 8-3848] Net dont_care in module/entity System does not have driver. [C:/Users/phatle/ProcessorDesign/ProcessorDesign.srcs/sources_1/new/System.v:37]
+INFO: [Synth 8-6155] done synthesizing module 'System' (33#1) [C:/Users/phatle/ProcessorDesign/ProcessorDesign.srcs/sources_1/new/System.v:23]
+WARNING: [Synth 8-7023] instance 'nolabel_line86' of module 'System' has 7 connections declared, but only 6 given [C:/Users/phatle/ProcessorDesign/ProcessorDesign.srcs/sources_1/new/soc_FPGA.v:86]
+INFO: [Synth 8-6157] synthesizing module 'mux2__parameterized1' [C:/Users/phatle/ProcessorDesign/ProcessorDesign.srcs/sources_1/imports/single_cycle_mips_source_initial/datapath/mux2.v:1]
+	Parameter WIDTH bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux2__parameterized1' (33#1) [C:/Users/phatle/ProcessorDesign/ProcessorDesign.srcs/sources_1/imports/single_cycle_mips_source_initial/datapath/mux2.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'soc_FPGA' (34#1) [C:/Users/phatle/ProcessorDesign/ProcessorDesign.srcs/sources_1/new/soc_FPGA.v:23]
+WARNING: [Synth 8-3331] design datapath has unconnected port instr[31]
+WARNING: [Synth 8-3331] design datapath has unconnected port instr[30]
+WARNING: [Synth 8-3331] design datapath has unconnected port instr[29]
+WARNING: [Synth 8-3331] design datapath has unconnected port instr[28]
+WARNING: [Synth 8-3331] design datapath has unconnected port instr[27]
+WARNING: [Synth 8-3331] design datapath has unconnected port instr[26]
+WARNING: [Synth 8-3331] design soc_FPGA has unconnected port button
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 738.883 ; gain = 242.195
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 738.883 ; gain = 242.195
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 738.883 ; gain = 242.195
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/phatle/ProcessorDesign/ProcessorDesign.srcs/constrs_1/new/soc_fpga.xdc]
+Finished Parsing XDC File [C:/Users/phatle/ProcessorDesign/ProcessorDesign.srcs/constrs_1/new/soc_fpga.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/phatle/ProcessorDesign/ProcessorDesign.srcs/constrs_1/new/soc_fpga.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/soc_FPGA_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/soc_FPGA_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 862.883 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 862.883 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 862.883 ; gain = 366.195
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 862.883 ; gain = 366.195
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 862.883 ; gain = 366.195
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "rom" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "multu_sel" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "hilo_sel" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sl_sel" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "jr_sel" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-327] inferring latch for variable 'y_reg' [C:/Users/phatle/ProcessorDesign/ProcessorDesign.srcs/sources_1/imports/single_cycle_mips_source_initial/datapath/alu.v:9]
+WARNING: [Synth 8-327] inferring latch for variable 'ld_cnt_reg' [C:/Users/phatle/Lab1-Factorial/Lab1-Factorial.srcs/sources_1/new/ControlUnit.v:78]
+WARNING: [Synth 8-327] inferring latch for variable 'ld_reg_reg' [C:/Users/phatle/Lab1-Factorial/Lab1-Factorial.srcs/sources_1/new/ControlUnit.v:79]
+WARNING: [Synth 8-327] inferring latch for variable 'oe_reg' [C:/Users/phatle/Lab1-Factorial/Lab1-Factorial.srcs/sources_1/new/ControlUnit.v:82]
+WARNING: [Synth 8-327] inferring latch for variable 'Err_reg' [C:/Users/phatle/Lab1-Factorial/Lab1-Factorial.srcs/sources_1/new/ControlUnit.v:84]
+WARNING: [Synth 8-327] inferring latch for variable 'NS_reg' [C:/Users/phatle/Lab1-Factorial/Lab1-Factorial.srcs/sources_1/new/ControlUnit.v:48]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 862.883 ; gain = 366.195
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 5     
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               64 Bit    Registers := 1     
+	               32 Bit    Registers := 7     
+	                4 Bit    Registers := 3     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 6     
++---Multipliers : 
+	                32x32  Multipliers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 14    
+	  18 Input     32 Bit        Muxes := 1     
+	   4 Input     32 Bit        Muxes := 4     
+	   2 Input     16 Bit        Muxes := 1     
+	   4 Input     12 Bit        Muxes := 1     
+	   8 Input      8 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	  14 Input      3 Bit        Muxes := 1     
+	  14 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 13    
+	   8 Input      1 Bit        Muxes := 1     
+	  14 Input      1 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 7     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module clk_gen 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+Module led_mux 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   4 Input     12 Bit        Muxes := 1     
+Module soc_ad 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      1 Bit        Muxes := 3     
+Module imem 
+Detailed RTL Component Info : 
++---Muxes : 
+	  18 Input     32 Bit        Muxes := 1     
+Module dreg 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module adder 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module mux2 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module mux2__parameterized0 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 1     
+Module regfile 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+Module alu 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   3 Input     32 Bit       Adders := 1     
++---Muxes : 
+	   8 Input      1 Bit        Muxes := 1     
+Module multu 
+Detailed RTL Component Info : 
++---Multipliers : 
+	                32x32  Multipliers := 1     
+Module dreg__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	               64 Bit    Registers := 1     
+Module mux3 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+Module maindec 
+Detailed RTL Component Info : 
++---Muxes : 
+	   8 Input      8 Bit        Muxes := 1     
+Module auxdec 
+Detailed RTL Component Info : 
++---Muxes : 
+	  14 Input      3 Bit        Muxes := 1     
+	  14 Input      2 Bit        Muxes := 1     
+	  14 Input      1 Bit        Muxes := 3     
+Module fact_ad 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      1 Bit        Muxes := 2     
+Module dreg__parameterized1 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
+Module dreg__parameterized2 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module CNT 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+Module REG 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module MUL 
+Detailed RTL Component Info : 
++---Multipliers : 
+	                32x32  Multipliers := 1     
+Module MUX 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module CU 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 7     
+	   4 Input      1 Bit        Muxes := 6     
+Module SRreg 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module fact_top 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+Module GPIO_ad 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      1 Bit        Muxes := 2     
+Module gpio_top 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+Module System 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+Module mux2__parameterized1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/phatle/ProcessorDesign/ProcessorDesign.srcs/sources_1/new/multu.v:28]
+DSP Report: Generating DSP multu/result, operation Mode is: A*B.
+DSP Report: operator multu/result is absorbed into DSP multu/result.
+DSP Report: operator multu/result is absorbed into DSP multu/result.
+DSP Report: Generating DSP multu/result, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator multu/result is absorbed into DSP multu/result.
+DSP Report: operator multu/result is absorbed into DSP multu/result.
+DSP Report: Generating DSP multu/result, operation Mode is: A*B.
+DSP Report: operator multu/result is absorbed into DSP multu/result.
+DSP Report: operator multu/result is absorbed into DSP multu/result.
+DSP Report: Generating DSP multu/result, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator multu/result is absorbed into DSP multu/result.
+DSP Report: operator multu/result is absorbed into DSP multu/result.
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [C:/Users/phatle/Lab1-Factorial/Lab1-Factorial.srcs/sources_1/new/MUL.v:28]
+DSP Report: Generating DSP nolabel_line86/factorial/Factorial/DP/MUL/z, operation Mode is: A*B.
+DSP Report: operator nolabel_line86/factorial/Factorial/DP/MUL/z is absorbed into DSP nolabel_line86/factorial/Factorial/DP/MUL/z.
+DSP Report: operator nolabel_line86/factorial/Factorial/DP/MUL/z is absorbed into DSP nolabel_line86/factorial/Factorial/DP/MUL/z.
+DSP Report: Generating DSP nolabel_line86/factorial/Factorial/DP/MUL/z, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator nolabel_line86/factorial/Factorial/DP/MUL/z is absorbed into DSP nolabel_line86/factorial/Factorial/DP/MUL/z.
+DSP Report: operator nolabel_line86/factorial/Factorial/DP/MUL/z is absorbed into DSP nolabel_line86/factorial/Factorial/DP/MUL/z.
+WARNING: [Synth 8-3331] design datapath has unconnected port instr[31]
+WARNING: [Synth 8-3331] design datapath has unconnected port instr[30]
+WARNING: [Synth 8-3331] design datapath has unconnected port instr[29]
+WARNING: [Synth 8-3331] design datapath has unconnected port instr[28]
+WARNING: [Synth 8-3331] design datapath has unconnected port instr[27]
+WARNING: [Synth 8-3331] design datapath has unconnected port instr[26]
+WARNING: [Synth 8-3331] design soc_FPGA has unconnected port button
+INFO: [Synth 8-3886] merging instance 'nolabel_line86/factorial/Factorial/CU/NS_reg[3]' (LD) to 'nolabel_line86/factorial/Factorial/CU/NS_reg[2]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\nolabel_line86/factorial/Factorial/CU/NS_reg[2] )
+INFO: [Synth 8-3886] merging instance 'nolabel_line86/factorial/Factorial/CU/CS_reg[3]' (FDC) to 'nolabel_line86/factorial/Factorial/CU/CS_reg[2]'
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/Mips/dp/hilo_reg/q_reg[47]) is unused and will be removed from module soc_FPGA.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/Mips/dp/hilo_reg/q_reg[46]) is unused and will be removed from module soc_FPGA.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/Mips/dp/hilo_reg/q_reg[45]) is unused and will be removed from module soc_FPGA.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/Mips/dp/hilo_reg/q_reg[44]) is unused and will be removed from module soc_FPGA.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/Mips/dp/hilo_reg/q_reg[43]) is unused and will be removed from module soc_FPGA.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/Mips/dp/hilo_reg/q_reg[42]) is unused and will be removed from module soc_FPGA.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/Mips/dp/hilo_reg/q_reg[41]) is unused and will be removed from module soc_FPGA.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/Mips/dp/hilo_reg/q_reg[40]) is unused and will be removed from module soc_FPGA.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/Mips/dp/hilo_reg/q_reg[39]) is unused and will be removed from module soc_FPGA.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/Mips/dp/hilo_reg/q_reg[38]) is unused and will be removed from module soc_FPGA.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/Mips/dp/hilo_reg/q_reg[37]) is unused and will be removed from module soc_FPGA.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/Mips/dp/hilo_reg/q_reg[36]) is unused and will be removed from module soc_FPGA.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/Mips/dp/hilo_reg/q_reg[35]) is unused and will be removed from module soc_FPGA.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/Mips/dp/hilo_reg/q_reg[34]) is unused and will be removed from module soc_FPGA.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/Mips/dp/hilo_reg/q_reg[33]) is unused and will be removed from module soc_FPGA.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/Mips/dp/hilo_reg/q_reg[32]) is unused and will be removed from module soc_FPGA.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/Mips/dp/hilo_reg/q_reg[31]) is unused and will be removed from module soc_FPGA.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/Mips/dp/hilo_reg/q_reg[30]) is unused and will be removed from module soc_FPGA.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/Mips/dp/hilo_reg/q_reg[29]) is unused and will be removed from module soc_FPGA.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/Mips/dp/hilo_reg/q_reg[28]) is unused and will be removed from module soc_FPGA.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/Mips/dp/hilo_reg/q_reg[27]) is unused and will be removed from module soc_FPGA.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/Mips/dp/hilo_reg/q_reg[26]) is unused and will be removed from module soc_FPGA.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/Mips/dp/hilo_reg/q_reg[25]) is unused and will be removed from module soc_FPGA.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/Mips/dp/hilo_reg/q_reg[24]) is unused and will be removed from module soc_FPGA.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/Mips/dp/hilo_reg/q_reg[23]) is unused and will be removed from module soc_FPGA.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/Mips/dp/hilo_reg/q_reg[22]) is unused and will be removed from module soc_FPGA.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/Mips/dp/hilo_reg/q_reg[21]) is unused and will be removed from module soc_FPGA.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/Mips/dp/hilo_reg/q_reg[20]) is unused and will be removed from module soc_FPGA.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/Mips/dp/hilo_reg/q_reg[19]) is unused and will be removed from module soc_FPGA.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/Mips/dp/hilo_reg/q_reg[18]) is unused and will be removed from module soc_FPGA.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/Mips/dp/hilo_reg/q_reg[17]) is unused and will be removed from module soc_FPGA.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/Mips/dp/hilo_reg/q_reg[47]__0) is unused and will be removed from module soc_FPGA.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/Mips/dp/hilo_reg/q_reg[46]__0) is unused and will be removed from module soc_FPGA.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/Mips/dp/hilo_reg/q_reg[45]__0) is unused and will be removed from module soc_FPGA.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/Mips/dp/hilo_reg/q_reg[44]__0) is unused and will be removed from module soc_FPGA.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/Mips/dp/hilo_reg/q_reg[43]__0) is unused and will be removed from module soc_FPGA.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/Mips/dp/hilo_reg/q_reg[42]__0) is unused and will be removed from module soc_FPGA.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/Mips/dp/hilo_reg/q_reg[41]__0) is unused and will be removed from module soc_FPGA.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/Mips/dp/hilo_reg/q_reg[40]__0) is unused and will be removed from module soc_FPGA.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/Mips/dp/hilo_reg/q_reg[39]__0) is unused and will be removed from module soc_FPGA.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/Mips/dp/hilo_reg/q_reg[38]__0) is unused and will be removed from module soc_FPGA.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/Mips/dp/hilo_reg/q_reg[37]__0) is unused and will be removed from module soc_FPGA.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/Mips/dp/hilo_reg/q_reg[36]__0) is unused and will be removed from module soc_FPGA.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/Mips/dp/hilo_reg/q_reg[35]__0) is unused and will be removed from module soc_FPGA.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/Mips/dp/hilo_reg/q_reg[34]__0) is unused and will be removed from module soc_FPGA.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/Mips/dp/hilo_reg/q_reg[33]__0) is unused and will be removed from module soc_FPGA.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/Mips/dp/hilo_reg/q_reg[32]__0) is unused and will be removed from module soc_FPGA.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/Mips/dp/hilo_reg/q_reg[31]__0) is unused and will be removed from module soc_FPGA.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/Mips/dp/hilo_reg/q_reg[30]__0) is unused and will be removed from module soc_FPGA.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/Mips/dp/hilo_reg/q_reg[47]__1) is unused and will be removed from module soc_FPGA.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/Mips/dp/hilo_reg/q_reg[46]__1) is unused and will be removed from module soc_FPGA.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/Mips/dp/hilo_reg/q_reg[45]__1) is unused and will be removed from module soc_FPGA.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/Mips/dp/hilo_reg/q_reg[44]__1) is unused and will be removed from module soc_FPGA.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/Mips/dp/hilo_reg/q_reg[43]__1) is unused and will be removed from module soc_FPGA.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/Mips/dp/hilo_reg/q_reg[42]__1) is unused and will be removed from module soc_FPGA.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/Mips/dp/hilo_reg/q_reg[41]__1) is unused and will be removed from module soc_FPGA.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/Mips/dp/hilo_reg/q_reg[40]__1) is unused and will be removed from module soc_FPGA.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/Mips/dp/hilo_reg/q_reg[39]__1) is unused and will be removed from module soc_FPGA.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/Mips/dp/hilo_reg/q_reg[38]__1) is unused and will be removed from module soc_FPGA.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/Mips/dp/hilo_reg/q_reg[37]__1) is unused and will be removed from module soc_FPGA.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/Mips/dp/hilo_reg/q_reg[36]__1) is unused and will be removed from module soc_FPGA.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/Mips/dp/hilo_reg/q_reg[35]__1) is unused and will be removed from module soc_FPGA.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/Mips/dp/hilo_reg/q_reg[34]__1) is unused and will be removed from module soc_FPGA.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/Mips/dp/hilo_reg/q_reg[33]__1) is unused and will be removed from module soc_FPGA.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/Mips/dp/hilo_reg/q_reg[32]__1) is unused and will be removed from module soc_FPGA.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/Mips/dp/hilo_reg/q_reg[31]__1) is unused and will be removed from module soc_FPGA.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/Mips/dp/hilo_reg/q_reg[30]__1) is unused and will be removed from module soc_FPGA.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/Mips/dp/hilo_reg/q_reg[29]__1) is unused and will be removed from module soc_FPGA.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/Mips/dp/hilo_reg/q_reg[28]__1) is unused and will be removed from module soc_FPGA.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/Mips/dp/hilo_reg/q_reg[27]__1) is unused and will be removed from module soc_FPGA.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/Mips/dp/hilo_reg/q_reg[26]__1) is unused and will be removed from module soc_FPGA.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/Mips/dp/hilo_reg/q_reg[25]__1) is unused and will be removed from module soc_FPGA.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/Mips/dp/hilo_reg/q_reg[24]__1) is unused and will be removed from module soc_FPGA.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/Mips/dp/hilo_reg/q_reg[23]__1) is unused and will be removed from module soc_FPGA.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/Mips/dp/hilo_reg/q_reg[22]__1) is unused and will be removed from module soc_FPGA.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/Mips/dp/hilo_reg/q_reg[21]__1) is unused and will be removed from module soc_FPGA.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/Mips/dp/hilo_reg/q_reg[20]__1) is unused and will be removed from module soc_FPGA.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/Mips/dp/hilo_reg/q_reg[19]__1) is unused and will be removed from module soc_FPGA.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/Mips/dp/hilo_reg/q_reg[18]__1) is unused and will be removed from module soc_FPGA.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/Mips/dp/hilo_reg/q_reg[17]__1) is unused and will be removed from module soc_FPGA.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/Mips/dp/hilo_reg/q_reg[47]__2) is unused and will be removed from module soc_FPGA.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/factorial/Factorial/CU/ld_cnt_reg) is unused and will be removed from module soc_FPGA.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/factorial/Factorial/CU/ld_reg_reg) is unused and will be removed from module soc_FPGA.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/factorial/Factorial/CU/oe_reg) is unused and will be removed from module soc_FPGA.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/factorial/Factorial/CU/Err_reg) is unused and will be removed from module soc_FPGA.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/factorial/Factorial/CU/NS_reg[2]) is unused and will be removed from module soc_FPGA.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 862.883 ; gain = 366.195
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++------------+----------------------------------+-----------+----------------------+-----------------+
+|Module Name | RTL Object                       | Inference | Size (Depth x Width) | Primitives      | 
++------------+----------------------------------+-----------+----------------------+-----------------+
+|soc_FPGA    | nolabel_line86/Mips/dp/rf/rf_reg | Implied   | 32 x 32              | RAM32M x 18     | 
+|soc_FPGA    | nolabel_line86/dmem/ram_reg      | Implied   | 64 x 32              | RAM64X1S x 32   | 
++------------+----------------------------------+-----------+----------------------+-----------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+
+DSP: Preliminary Mapping  Report (see note below)
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|datapath    | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|datapath    | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|datapath    | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|datapath    | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|soc_FPGA    | A*B            | 18     | 5      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|soc_FPGA    | (PCIN>>17)+A*B | 16     | 5      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/phatle/Lab1-Factorial/Lab1-Factorial.srcs/sources_1/new/REG.v:30]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/phatle/Lab1-Factorial/Lab1-Factorial.srcs/sources_1/new/REG.v:30]
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 883.855 ; gain = 387.168
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 904.410 ; gain = 407.723
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping  Report
++------------+----------------------------------+-----------+----------------------+-----------------+
+|Module Name | RTL Object                       | Inference | Size (Depth x Width) | Primitives      | 
++------------+----------------------------------+-----------+----------------------+-----------------+
+|soc_FPGA    | nolabel_line86/Mips/dp/rf/rf_reg | Implied   | 32 x 32              | RAM32M x 18     | 
+|soc_FPGA    | nolabel_line86/dmem/ram_reg      | Implied   | 64 x 32              | RAM64X1S x 32   | 
++------------+----------------------------------+-----------+----------------------+-----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/phatle/ProcessorDesign/ProcessorDesign.srcs/sources_1/imports/single_cycle_mips_source_initial/datapath/dreg.v:11]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/phatle/ProcessorDesign/ProcessorDesign.srcs/sources_1/imports/single_cycle_mips_source_initial/datapath/dreg.v:11]
+INFO: [Synth 8-3886] merging instance 'i_2513' (FDCE) to 'i_2544'
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/Mips/dp/alu/y_reg[31]) is unused and will be removed from module soc_FPGA.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/Mips/dp/alu/y_reg[30]) is unused and will be removed from module soc_FPGA.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/Mips/dp/alu/y_reg[29]) is unused and will be removed from module soc_FPGA.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/Mips/dp/alu/y_reg[28]) is unused and will be removed from module soc_FPGA.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/Mips/dp/alu/y_reg[27]) is unused and will be removed from module soc_FPGA.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/Mips/dp/alu/y_reg[26]) is unused and will be removed from module soc_FPGA.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/Mips/dp/alu/y_reg[25]) is unused and will be removed from module soc_FPGA.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/Mips/dp/alu/y_reg[24]) is unused and will be removed from module soc_FPGA.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/Mips/dp/alu/y_reg[23]) is unused and will be removed from module soc_FPGA.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/Mips/dp/alu/y_reg[22]) is unused and will be removed from module soc_FPGA.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/Mips/dp/alu/y_reg[21]) is unused and will be removed from module soc_FPGA.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/Mips/dp/alu/y_reg[20]) is unused and will be removed from module soc_FPGA.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/Mips/dp/alu/y_reg[19]) is unused and will be removed from module soc_FPGA.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line86/Mips/dp/alu/y_reg[18]) is unused and will be removed from module soc_FPGA.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/phatle/Lab1-Factorial/Lab1-Factorial.srcs/sources_1/new/REG.v:30]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/phatle/Lab1-Factorial/Lab1-Factorial.srcs/sources_1/new/CNT.v:31]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/phatle/Lab1-Factorial/Lab1-Factorial.srcs/sources_1/new/REG.v:30]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/phatle/Lab1-Factorial/Lab1-Factorial.srcs/sources_1/new/CNT.v:31]
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 962.543 ; gain = 465.855
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 968.266 ; gain = 471.578
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 968.266 ; gain = 471.578
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 968.266 ; gain = 471.578
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 968.266 ; gain = 471.578
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 968.266 ; gain = 471.578
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 968.266 ; gain = 471.578
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     2|
+|2     |CARRY4   |    31|
+|3     |DSP48E1  |     2|
+|4     |LUT1     |     1|
+|5     |LUT2     |    20|
+|6     |LUT3     |    85|
+|7     |LUT4     |    96|
+|8     |LUT5     |   166|
+|9     |LUT6     |   373|
+|10    |MUXF7    |     2|
+|11    |RAM32M   |    12|
+|12    |RAM64X1S |    32|
+|13    |FDCE     |   147|
+|14    |FDRE     |    35|
+|15    |LD       |     2|
+|16    |IBUF     |     7|
+|17    |OBUF     |    17|
++------+---------+------+
+
+Report Instance Areas: 
++------+-------------------+-----------------------+------+
+|      |Instance           |Module                 |Cells |
++------+-------------------+-----------------------+------+
+|1     |top                |                       |  1030|
+|2     |  clk_gen          |clk_gen                |    56|
+|3     |  led_mux          |led_mux                |     8|
+|4     |  nolabel_line86   |System                 |   940|
+|5     |    GPIO           |gpio_top               |   120|
+|6     |      O1           |dreg_4                 |    35|
+|7     |      O2           |dreg_5                 |    85|
+|8     |    Mips           |mips                   |   660|
+|9     |      dp           |datapath               |   660|
+|10    |        alu        |alu                    |    12|
+|11    |        pc_plus_4  |adder                  |     1|
+|12    |        pc_plus_br |adder_2                |     2|
+|13    |        pc_reg     |dreg_3                 |   599|
+|14    |        rf         |regfile                |    46|
+|15    |    dmem           |dmem                   |    32|
+|16    |    factorial      |fact_top               |   128|
+|17    |      Factorial    |Factorial              |    85|
+|18    |        CU         |CU                     |    40|
+|19    |        DP         |DP                     |    45|
+|20    |          CNT      |CNT                    |    11|
+|21    |          MUL      |MUL                    |     2|
+|22    |          REG      |REG                    |    32|
+|23    |      GoPulse_reg  |dreg__parameterized2   |     1|
+|24    |      Go_reg       |dreg__parameterized2_0 |     1|
+|25    |      Result_Done  |SRreg                  |     2|
+|26    |      Result_Err   |SRreg_1                |     1|
+|27    |      n_reg        |dreg__parameterized1   |     6|
+|28    |      nf_reg       |dreg                   |    32|
++------+-------------------+-----------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 968.266 ; gain = 471.578
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 166 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:30 ; elapsed = 00:00:37 . Memory (MB): peak = 968.266 ; gain = 347.578
+Synthesis Optimization Complete : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 968.266 ; gain = 471.578
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 81 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 968.266 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 46 instances were transformed.
+  LD => LDCE: 2 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 12 instances
+  RAM64X1S => RAM64X1S (RAMS64E): 32 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+121 Infos, 125 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:44 ; elapsed = 00:00:46 . Memory (MB): peak = 968.266 ; gain = 678.641
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 968.266 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/phatle/ProcessorDesign/ProcessorDesign.runs/synth_1/soc_FPGA.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file soc_FPGA_utilization_synth.rpt -pb soc_FPGA_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Apr 25 23:08:35 2020...

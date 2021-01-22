@@ -1,0 +1,12 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../ProcessorDesign.srcs/sources_1/new/GPIO_ad.v" \
+"../../../../ProcessorDesign.srcs/sources_1/imports/single_cycle_mips_source_initial/datapath/dreg.v" \
+"../../../../ProcessorDesign.srcs/sources_1/new/pqio_top.v" \
+"../../../../ProcessorDesign.srcs/sim_1/new/GPIO_top_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
