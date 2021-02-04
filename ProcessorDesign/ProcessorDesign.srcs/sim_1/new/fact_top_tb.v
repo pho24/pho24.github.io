@@ -25,7 +25,8 @@ module fact_top_tb;
       reg [1:0] A_tb;
       reg [3:0] WD_tb;
       wire [31:0] RD_tb;
-   fact_top DUT(.clk(clk),
+
+    fact_top DUT(.clk(clk),
                 .rst(rst),
                 .WE(WE_tb),
                 .A(A_tb),
