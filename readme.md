@@ -12,7 +12,7 @@
       - [Five-stage Pipelined](#five-stage-pipelined)
       - [System on Chip](#system-on-chip)
         - [Factorial accelerator](#factorial-accelerator)
-        - [Factorial accelerator](#factorial-accelerator-1)
+        - [GPIO](#gpio)
   - [Schematics](#schematics)
       - [Five-stage Pipelined](#five-stage-pipelined-1)
       - [System on Chip](#system-on-chip-1)
@@ -25,7 +25,7 @@
   - [Simulation Result](#simulation-result)
       - [SoC with single-cycle system](#soc-with-single-cycle-system)
       - [Factorial accelerator wrapper](#factorial-accelerator-wrapper)
-      - [GPIO](#gpio)
+      - [GPIO](#gpio-1)
       - [SoC address decoder](#soc-address-decoder)
   - [References](#references)
   - [License](#license)
@@ -92,7 +92,7 @@ The system on chip`SoC` which interfaces the MIPS processor design with the `fac
 ##### Factorial accelerator 
 The `factorial accelerator` needs to be put inside an `interface wrapper` in order to communicate with the MIPS processor as shown in ***Figure 6*** below. The wrapper also has its own memory-mapped table to support its functionality shown in ***Table 6*** below. Moreover, it has a `4-to-1 Mux` so select the output based on `RdSel` signal.
 
-##### Factorial accelerator 
+##### GPIO 
 Similar to the factorial accelerator wrapper, the `GPIO-Mapped` also has an `address
 decoder` as well as a `4-to-1 Mux` which follow the functionality in ***Table 5***. For this project, the GPIO was used to `load` the data from the `input switches` to the processor using the general input function of the GPIO. The GPIO also outputs the final result when the general output function is selected.
 
