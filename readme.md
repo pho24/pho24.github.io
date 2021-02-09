@@ -125,8 +125,7 @@ decoder` as well as a `4-to-1 Mux` which follow the functionality in ***Table 5*
 ***Figure 6: Factorial accelerator wrapper top-level design***
 
 ![asdf](https://lh5.googleusercontent.com/pUkxFTpIhzWBb8uIhddRbJVuxD-eJTwFlYbF2PDuv8LGDuGLTd1GqbqXVtfBqCdoKoHU-8rJyyWEMAQ2FQ5Xa3jZM-xfKLzGMlCXQAlrp9rBBVv6l3-tICYPJ5KaAXx3xOD3xuw)
-***Figure 7: GPIO top-level design*
-**
+***Figure 7: GPIO top-level design***
 
 #### FPGA validation wrapper
 ![asdf](https://lh5.googleusercontent.com/K4Z7SMCQ0vVhP_IyEjBZInTDJlEt1m18gPr-df2uqd-j-P2X3OkiOuKvEBKjOkWZAcoGAeUwV6lP5PQCtST9OFW3him7A2xc2x97VlUZAtH7jvj0aEb7bSjhtA7MIa68FSE043g)
