@@ -117,14 +117,14 @@ decoder` as well as a `4-to-1 Mux` which follow the functionality in ***Table 5*
 
 #### System on Chip
 ![asdf](https://lh5.googleusercontent.com/-nOeW7KIj5oWC3QVkqTWHNQ1Z8qYvPnTr_QUSZAeVPE-Dm4I9jT0oTGfbMSZDGZIFBI6ZESWd3pD2mn-NQvaDpABMoyubP7E9V0fyHN9VDPYmGMEPVbWjdt5sEEGpQWY5zx37pU)
-*Figure 5: SoC top-level design*
+***Figure 5: SoC top-level design***
 
 ![asdf](https://lh5.googleusercontent.com/qXDlgI249_ModkypVikrxfDPzEyCRzUTdVIdWf6yzA25H8eWldtCMK59hmb532Wj3S8Uu07-6Xok-PLiZdJ8HpezPtHdy_7zg1_6QkQN_NsvQcfu0R8nplLnu4WPvM5804HSrI4)
-*Figure 6: Factorial accelerator wrapper top-level design*
+***Figure 6: Factorial accelerator wrapper top-level design***
 
 ![asdf](https://lh5.googleusercontent.com/pUkxFTpIhzWBb8uIhddRbJVuxD-eJTwFlYbF2PDuv8LGDuGLTd1GqbqXVtfBqCdoKoHU-8rJyyWEMAQ2FQ5Xa3jZM-xfKLzGMlCXQAlrp9rBBVv6l3-tICYPJ5KaAXx3xOD3xuw)
-*Figure 7: GPIO top-level design*
-
+***Figure 7: GPIO top-level design*
+**
 
 #### FPGA validation wrapper
 ![asdf](https://lh5.googleusercontent.com/K4Z7SMCQ0vVhP_IyEjBZInTDJlEt1m18gPr-df2uqd-j-P2X3OkiOuKvEBKjOkWZAcoGAeUwV6lP5PQCtST9OFW3him7A2xc2x97VlUZAtH7jvj0aEb7bSjhtA7MIa68FSE043g)
@@ -179,48 +179,52 @@ The resulting cycles for all `12 input n` values were compared for `polling` and
 The testbench for the SoC would run until the program counter reached the end of the MIPS program counter. In this case, the SoC would run until `pc_current = 40`. To test the system, the testbench provided the value of `n` for the `gpI1`. 
 According to the instructions code, `gpO1` would output the select and error signal at pc_current = 3c. The first Hex is the error and the second Hex is the `hi` or `low` select signal. Furthermore, the gpO2 would output the factorial result at pc_current = 40. ***Figure 11*** shows the `factorial of 12` to be correct at `gpO2`. ***Figure 11*** and ***Figure 12*** also demonstrated the system was able to display the `hi` or `low` selection at `GPO1 = 10` or `00`. When `n = 13`, the error signal was displayed as the `gpO1 = 11` shown in ***Figure 10***.
 
-![asdf](https://lh5.googleusercontent.com/CbKFvL_QZZHc6U8alDBfXygqIAMgNpaLRyjtGsc9tsueXFFTxuaJcWJTvVlJbwa1H2hGpXaXpHDwiJBnKVzm1tdeDQE9ZJCKoKitT7UKvsbOJhjYK-EX-7k8RdrlPesUPHUkS1G7)
+![asdf](https://lh6.googleusercontent.com/k98OtZxqJO4nYlFN66A5wHa74acX_Y5hVM0AIcfVfyvy8v1iVqLF3nB2mcF0-F8LKnN9xvBQ3uqBka_X8XHsM38jk_z69FSXX4ZajNZfKw88RYrlK_1S9_zgGxNz0fDwklLrWBM)
+
 ***Figure 10: Waveform of the factorial system when input is 13***
 
 
-![asdf](https://lh4.googleusercontent.com/LNV9ZZM-mwRA93mNWCQvdxLmBWbOAOgCuAUeRol98KcLEBiG3BTZCgvfVT9yKPte8I8b2GlRDuLIpGiBYL45609N3B5Qu_yPqUcPIOdqTd6Ow_c4oPgDG_DJDp3Llco7r0QiCoZE)
+![asdf](https://lh3.googleusercontent.com/60ua2WUbQKmuJjlUGIdKQ-WavXgKHqnqnTyIC39KSlgN5PDX8nsNSAt_IR_JgfusEw7e5r0b4srwR9XoLSXhyCIWfZtJ6RRlL_J_vCRnkmjvtbntO0WJgC3Wp7ldQUaK3nyTMrg)
+
 ***Figure 11: Waveform of the SoC when input is 12(dispSe = 1)***
 
-![asdf](https://lh5.googleusercontent.com/V3i4pejl51RGVg2NYvCCIfVVLsXDunKZcZ7MjHxvNFLi2XYOsFnzpHGu2emt3TcyvRcrIGpliktBtS5omAm04pH5jztVfM0FHbjMP5-27BXkk9HGgEUslzTgr2tg5yzTkmCjbHP-)
+![asdf](https://lh6.googleusercontent.com/f3TQlyqOiUZRDoNS73wO58No7x-Dh-4Mrw-2l5eXmvmiLQw2Hy2rFI8jIFZF7J6ziJYIwetZrGZdwzaxix8LRMW3DpJ8K73LgyqRolkqMV_tANtp_HfQs3vglmp7k5lJ-QmAmuA)
+
 ***Figure 12: Waveform of the SoC system when input is 12(dispSe = 0)***
 
 #### Factorial accelerator wrapper
 The testbench plan was to provide all possible cases of n input (from `0 to 15`). Each of the case, the testbench also provided a `go` signal (`WD_tb = 1`) to begin the factorial operation. According to ***Figure 13*** below, when `n = 12` (`WD_tb = c`), the clock would run until it received a done signal (`RD_tb = 1`). It can easily be observed that the final result is correct (`!12 = 1c8cfc00`).
 
-![asdf](https://lh3.googleusercontent.com/5vDd73r43OdXRSo3Ql4TJ8v0Wf8f67QRL6BTppOR8rXMFcsj8Tef79BteuuSK8Y3GmPuC0KiEaGDot8uCYHYSiJW7H9DoYKGvBeXmPC-gF7DrYrR-7zEc7eV8LDfXyDhATNiUUyO)
+![asdf](https://lh3.googleusercontent.com/zMlWiJ5E8ljcfuZWbL6XbUDAjDDY8GDzxfNRq-xwalpImFBrWnV7Hmxownxe_WPORZaxafr84JpDLmQhkZ_hXe7y_nKDqkl7DoBRNzTTbylqV3lvnTt7V_fxj1mYFFC8hG7fBk8)
+
 ***Figure 13: Waveform of the factorial accelerator wrapper when input is 12***
 
 #### GPIO
 The testbench for the GPIO would test the output `RD_tb` based on random input provided for the `gpI1, gpI2,` and `WD`. According to ***Figure 14*** below, when the address `A_tb` was `0`, which means that `gpI1` was selected, the value of `RD_tb` matched the value of `gpI1(12153524)`. When gpI2 was selected(A_tb = 1), RD_tb also matched the value of `gpI2(c0895e81)`. For the general purpose output, the data was passed from `WD_tb` to `RD_tb`. For instance, when `A_tb = 2 `or `3`, the `gpO1_tb` and `gpO2_tb` respectively output the exact value taken from `WD_tb`.
 
-![asdf](https://lh4.googleusercontent.com/uXzGoWmbO_rYB7RHOxFFARttVstI6wGbSTQnBbZPjB-KdljoAFYe3kGQDSj8bNgVb2wKhHV9TWQwBJrWMnufLMWCdggcLbNyodvdj0oUUU23uO4C65qJ1OczjCCrj22attdOZ1rF)
+![asdf](https://lh6.googleusercontent.com/oMDLul6kJZ76osPtUfp9T6JghGocvuqm6t5wQsnch2nhvWfEr6YwI2ykkIdfm-td5aO0dOwZ9M1xIbXSkjOLXIAtWsaXHFjAyANW1ZpLaqg0_gDZJ4-LPYXIFLYlRa3vZ8OKsb0)
 ***Figure 14: Waveform of the GPIO***
 
 #### SoC address decoder
 The testbench for the SoC address decoder would check the value of outputs `WE1, WE2, WEM, `and `Rd_Sel` based on random address input(`A_tb`) and the write enable signal (`WE_tb`). ***Figure 15*** below demonstrated that when the address is `0000_1011_10`, which fall in the range of `0000_xxxx_xx`, the SoC would select to store or load data to the data memory(`dmem`) by making `RdSel_tb = 00`. Furthermore, the dmem write enable signal(`WEM`) should match the `WE_tb` signal. Similar to the dmem select, `1000_0000_01 `and` 1001_0000_11` would respectively select the factorial(`1000_0000_xx`) and GPIO(`1000_0000_xx`) as expected.
 
-![asdf](https://lh4.googleusercontent.com/uXzGoWmbO_rYB7RHOxFFARttVstI6wGbSTQnBbZPjB-KdljoAFYe3kGQDSj8bNgVb2wKhHV9TWQwBJrWMnufLMWCdggcLbNyodvdj0oUUU23uO4C65qJ1OczjCCrj22attdOZ1rF)
+![asdf](https://lh6.googleusercontent.com/5aNf5Lm1CjK3hJwhDA3CKgoz3O9ud0iYr0bOqw1VXiB2UVEQjV1Z1898BBAm4atgtYPCZDagb0N9PMYWIdduJNePxhHU2MZVIXxm7h3nhVLxDqL_BY7nTYvOzSGfe2Ktp5aOgcY)
 ***Figure 15: Waveform of the address decoder of the SoC***
 
 ####SoC with complete pipelined system
 To take advantage of the `forwarding paths` and reduce the number of `nops`, the MIPS code is `rearranged` so that only `lw` instruction need nops inserted. The results of the factorial are shown after the `j fact` instruction. The inputs are limited from `0 to 12` because of the limitation of the FPGA board. ***Figure 17*** shows the result of factorial of `12`, where `gpO2` is `1C8CFC00` and `gpO1` is showing no error with the value of `10000` where high signal is selected. ***Figure 19*** shows the result of factorial of `13`. Because the input is greater than `12`, factorial of `13 `is not shown, but error signal can be seen in `gpO1` output as `10001`.
 
 ![asdf](https://lh6.googleusercontent.com/klcBfixkY8zLUoldJ1307hLEBtOpvnt9CTzkdk1YRs9WMJIEiklYm2GcBfv_4RnoEk317I5j_-VzeE6mPD1qPe250V-oaHPJclttNRQ_Fc-JEuikQL55iMuJbwyVpbVeyjQLRnY)
-Figure 16 : Waveform of the factorial system when input is 12
+***Figure 16 : Waveform of the factorial system when input is 12***
 
 ![asdf](https://lh6.googleusercontent.com/JSRfTaM6SYUsYmFQlNRoY3Sn2Def914EESSDaJpbkVMFie2Xs2v2EQOAASxhe8XSnd_yFLrtY4JU673YkNtv5uteRTtgKULbfOAe5vsLGE9dkUUBDOMfnUOf35-ScqxNPBueIEg)
-Figure 17: Zoomed in waveform of factorial of 12
+***Figure 17: Zoomed in waveform of factorial of 12***
 
 ![asdf](https://lh3.googleusercontent.com/7gVTGQMOouyqXztflmBkP__lEJ6eboZT4iB-28kYP5d3n192iIgo5hXeG7zMRHuyqByXnuhqNF6XRQ49NVssN37-H-heMMjDFII3yf5_qjCz5dscKILgH2nK0ar3g9vbKNGWjw4)
-Figure 18 : Waveform of factorial system when input is 13
+***Figure 18 : Waveform of factorial system when input is 13***
 
 ![asdf](https://lh6.googleusercontent.com/j9rmW-CWnZq85VlcoJf3UGDiQmehB_QPqHrdrdYCuTJtfev67oSWz1gfjWxfIFQO7b7bUemJXEZVc6cHMSuuxcg2_UuHZZssFl9bR0Nd1iFm08qoybqYAynPBcqpeL3N86eblaU)
-Figure 19: Zoomed in wave form of factorial of 13
+***Figure 19: Zoomed in wave form of factorial of 13***
 
 ***Figure 20*** below shows the `branch stalls`. `Branch` instruction is where `pc_current` is `0x2c`. The instruction after that is stalled while waiting for the `result` of the branch to be calculated. When it turns out that branch is `taken`, instruction `0x30` is `flushed`, and it `jumps` to the target where `pc_current = 0x20`.
 
