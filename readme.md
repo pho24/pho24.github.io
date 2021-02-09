@@ -167,9 +167,11 @@ The resulting cycles for all `12 input n` values were compared for `polling` and
 ![asdf](https://lh3.googleusercontent.com/wEjgTTASJsSjTb1Jtdg5qO8Rjlcv_haUS5n8qYBCixxI84FS6R6JIOWSRiJWpzqQ8DHBNhtxyulPxwhhYKtqTAsm8dp22AaxxFoFL9zHymtK7hOXZx-Km-E0FCP4zA)
 
 ![asdf](https://lh5.googleusercontent.com/-W2vgza_SCzL49GG8MLE0plfK4xUATOzJ3YANazipBIkT0rMMA00FMJcrgjQQ4NkJkMMmyRXLuVWBmdT_ZRfCwAFoP8UvkeBhopGPO6JrqqjWseTZE4AUjc2WfCvhxd2jzPX2lRT)
+
 ***Figure 8: Performance analysis for non-pipelined polling and recursive functions***
 
 ![asdf](https://lh5.googleusercontent.com/bHwd1gFQJ2iU8blwaTdlGBb15LNZjELIC0ISzfvRb6kJ6ooS9uldx22EpFFeFmH9fspXv6zZaFkqcfrK55MCSnX8xT8lGJt5YMNOFY-PLmAsIbB2SJ7eqJy2eIg4a95dcaJqrKwB)
+
 ***Figure 9: Performance analysis for the pipelined polling and recursive functions***
 
 [Back To The Top](#pipelined-mips-processor-and-io-interface)
