@@ -80,7 +80,7 @@ Since the chosen FPGA board can run at `50Mhz` with a **clock divider**(`clk_gen
 ***Figure 3: Bubble diagram***
 
 #### FPGA validation wrapper
-![asdf](https://lh5.googleusercontent.com/K4Z7SMCQ0vVhP_IyEjBZInTDJlEt1m18gPr-df2uqd-j-P2X3OkiOuKvEBKjOkWZAcoGAeUwV6lP5PQCtST9OFW3him7A2xc2x97VlUZAtH7jvj0aEb7bSjhtA7MIa68FSE043g)
+![asdf](https://github.com/PhatLe15/Computer-Architecture-Design/blob/master/UART/FPGA_wrapper.png?raw=true)
 ***Figure 4: FPGA top-level design***
 
 [Back To The Top](#uart-receiver)
