@@ -102,7 +102,7 @@ The testbench design was to simulate the value input `0x48` that was sent at `11
 ---
 ## FPGA validation
 The schematic of FPGA wrapper is as in ***Figure 4***. The output data of the `UART_RX` is connected to a hex to 7-segments converter module(`hex_2_7seg`) which is then go through the 7-segments driver(lex_mux). Since there is only 2 hex value per keyboard button, the first two `7-segments LEDs` were used to display the receiving value. Moreover, an LED was also be used to show the `valid` signal when the transmission is finished. 
-To actually send a keyboard input data through the micro USB port, the application called **Tera Term** was used to setup the `frame` format as well as the `baudrate` as shown in ***Figure 6*** below. As shown in ***Figure*** below, the FPGA board has been correctky receive the data and display to the 7-segments LEDs.
+To actually send a keyboard input data through the micro USB port, the application called **Tera Term** was used to setup the `frame` format as well as the `baudrate` as shown in ***Figure 6*** below. As shown in ***Figure*** below, the FPGA board has been correctly receive the data and display to the 7-segments LEDs.
 
 ![asdf](https://cdn.sparkfun.com/assets/2/b/4/0/5/521e941a757b7f09778b4567.png)
 ##### *Figure 6: Tera Term interface to set up and send the keyboard input data*
