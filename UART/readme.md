@@ -2,7 +2,9 @@
  Design and create a UART Receiver Driver to accept signal from keyboard from computer and display 8-bit Hex signal to the 7-segments LEDs of FPGA board. All of the designs need to go through multiple processes such as *functional verification*, *hardware validation*.
 
  ![asdf](https://github.com/PhatLe15/Computer-Architecture-Design/blob/master/UART/UART%20frame.png?raw=true)
-***Figure 1: UART Serial Data Stream***
+
+
+#####*Figure 1: UART Serial Data Stream*
 
 ### Table of Contents
 
@@ -101,7 +103,7 @@ The schematic of FPGA wrapper is as in ***Figure 4***. The output data of the `U
 To actually send a keyboard input data through the micro USB port, the application called **Tera Term** was used to setup the `frame` format as well as the `baudrate` as shown in ***Figure 6*** below. As shown in ***Figure*** below, the FPGA board has been correctky receive the data and display to the 7-segments LEDs.
 
 ![asdf](https://cdn.sparkfun.com/assets/2/b/4/0/5/521e941a757b7f09778b4567.png)
-***Figure 6: Tera Term interface to set up and send the keyboard input data***
+#####*Figure 6: Tera Term interface to set up and send the keyboard input data*
 
 
 
